@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+.full {
+    width: 100%;
+}
+.site_structure {
+    background-color: yellow;
+    max-width: 980px;
+    position: static;
+    margin: 0 auto;
+}
+.header {
+    background-color: black;
+    height: 300px;
+    width: 980px;
+}
+.logotype {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.name {
+    background-color: white;
+    height: 50px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.nav {
+    background-color: white;
+    height: 40px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.bottons {
+    background-color: yellow;
+    width: 90px;
+    margin-right: 7px;
+    height: 40px;
+    display: inline-block;
+    font-size: 10px;
+    text-align: center;
+}
+.content {
+    background-color: pink;
+    width: 300px;
+    height: 1200px;
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 12px; 
+}
+.content1 {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+}
+.content2 {
+    background-color: blue;
+    width: 300px;
+    height: 450px;
+    margin-top: 20px; 
+}
