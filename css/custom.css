@@ -11,57 +11,246 @@ body {
     margin: 0 auto;
 }
 .header {
-    background-color: black;
-    height: 300px;
+    background-color: white;
+    height: 280px;
     width: 980px;
 }
 .logotype {
     background-color: white;
-    width: 150px;
-    height: 150px;
+    width: 310px;
+    height: px;
     margin: 0 auto;
-    margin-top: 50px;
 }
+.logotype-img {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    margin-left: 100px; 
+    margin-top: 20px; 
+}
+/*箭頭碰到大頭貼時會出現打招呼的對話框*/
+.sayhi {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    margin-top: 25px; 
+    margin-left: 10px;
+    display: none;
+}
+.logotype-img:hover + .sayhi {
+    display: block;
+}
+
 .name {
     background-color: white;
     height: 50px;
     width: 250px;
     margin: 0 auto;
+    text-align: center;
     margin-top: 20px;
+}
+.name > img {
+    width: 180px;
+    padding-top: 10px;    
 }
 .nav {
     background-color: white;
-    height: 40px;
+    height: 100px;
     width: 300px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 160px;
 }
-.bottons {
-    background-color: yellow;
+.bottons1 {
+    background-color: rgba(0,0,0,0);
     width: 90px;
     margin-right: 7px;
-    height: 40px;
+    height: 150px;
     display: inline-block;
-    font-size: 10px;
+}
+.bottons {
+    background-color: #ccffee;
+    width: 90px;
+    margin-right: 7px;
+    height: 45px;
+    display: inline-block;
+    font-size: 9.5px;
     text-align: center;
+    color: #009da3;
+    border-radius: 5px;
+}
+.bottons:hover {
+    color:white;
+    background-color: #009da3; 
+    text-decoration: none;
+    font-size: 10.5px;
+    height: 47px;
+    width: 95px;
+    margin-right: 3px; 
+    cursor: pointer;
+}
+/*下拉式選單*/
+.works {
+    background-color: #009da3;
+    border-radius: 5px;
+    position: absolute;
+    width: 95px;
+    height: 114px;
+    margin-top: 5px;
+    display: none;
+    z-index: 5;
+}
+/*下拉式選單選項*/
+.works-bottons {
+    height: 25px;
+    width: 90px;
+    padding-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 2.5px;
+    margin-top: 2px;
+    text-align: center;
+    background-color: #009da3;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;/*字首大寫*/
+}
+.works:hover {
+    display: block;
+}
+.bottons1:hover  .works {
+    display: block;
+}
+.bottons1:hover .bottons {
+    color:white;
+    background-color: #009da3; 
+    text-decoration: none;
+    font-size: 10.5px;
+    height: 47px;
+    width: 95px;
+    margin-right: 3px; 
+    cursor: pointer;
+}
+.works-bottons:hover {
+    cursor: pointer;
+    background-color: #66c4c7;
+    font-size: 17px;
+}
+.bottons:visited {
+    text-decoration: none;
 }
 .content {
-    background-color: pink;
+    background-color: white;
     width: 300px;
     height: 1200px;
     display: inline-block;
     margin-right: 12px;
     margin-left: 12px; 
+    float: left;
+    transition: 2s;
 }
+/*往左的移動元素*/
+.move {
+    position: absolute;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 324px;
+    cursor:zoom-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+.move-left {
+    height: 450px;
+    background-color: pink;
+    animation-name: move-left;
+}
+@keyframes move-left {
+    from {
+        margin-top: 20px;
+        margin-left: 324px;
+}
+    to {
+        margin-left: 0px;
+        margin-top: 340px;
+}
+}
+/*往右的移動元素*/
+.move-right {
+    height: 450px;
+    background-color: yellow;
+    animation-name: move-right;
+}
+@keyframes move-right {
+    from {
+        margin-top: 20px;
+        margin-left: 324px;
+}
+    to {
+        margin-left: 648px;
+        margin-top: 340px;
+}
+}
+/*往下的移動元素*/
+.move-bottom {
+    height: 300px;
+    background-color: green;
+    animation-name: move-bottom;
+}
+@keyframes move-bottom {
+    from {
+        margin-top: 20px;
+        margin-left: 324px;
+}
+    to {
+        margin-left: 324px;
+        margin-top: 490px;
+}
+}
+
 .content1 {
     background-color: blue;
     width: 300px;
     height: 300px;
+    margin: 0 auto;
     margin-top: 20px;
+    cursor:zoom-in;
+}
+.content1 > img {
+    width: 301px;
 }
 .content2 {
     background-color: blue;
     width: 300px;
     height: 450px;
     margin-top: 20px; 
+    cursor:zoom-in;
 }
+.footer {
+    background-color: white;
+    margin: 0 auto;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 150px;
+}
+.footer > h2 {
+    font-size: 7px;
+    text-align: center;
+    color: grey;
+}
+.all-links {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.link {
+    width: 40px;
+    height: 40px;
+    background-color: white; 
+    display: inline-block;
+    margin: 0 auto; 
+    margin-left: 5px;
+    background-size: 40px;
+}
+

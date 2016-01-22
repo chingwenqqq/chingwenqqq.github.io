@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="em" ng-app="qber">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +7,102 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body>
-    <div class="full">
+    <div class="full" ng-controller="pageController">
         <div class="site_structure">
+        
+            <!--logo加選單-->
             <div class="header">
-                <div class="logotype"></div>
-                <div class="name"></div>
-                <div class="nav">
-                    <div class="bottons">
-                        <h1>Works</h1>
+                <div class="logotype">
+                    <div class="logotype-img">
+                        <img src="../image/my-icon.png">
                     </div>
-                    <div class="bottons">
+                    <div class="sayhi"><!--驚喜彩蛋-->
+                        <img src="../image/sayhi.png">
+                    </div>
+                </div>
+                <div class="name">
+                    <img src="../image/my-name.png">
+                </div>
+                <div class="nav">
+                    <div class="bottons1">
+                        <div class="bottons">
+                            <h1>Works</h1>
+                        </div>
+                        <div class="works"><!--下拉式選單區-->
+                            <div class="works-bottons" ng-click="change('#/design')">
+                                design
+                            </div>
+                            <div class="works-bottons" ng-click="change('#/illustration')">
+                                illustration
+                            </div>
+                            <div class="works-bottons" ng-click="change('#/photo')">
+                                photo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottons" ng-click="change('#/about')">
                         <h1>About</h1>
                     </div>
-                    <div class="bottons">
+                    <div class="bottons" ng-click="change('#/contact')">
                         <h1>Contact</h1>
                     </div>
                 </div>
             </div>
-            <div class="content">
-                <div class="content1"></div>
-                <div class="content2"></div>
-                <div class="content1"></div>
-            </div>
-            <div class="content">
-                <div class="content2"></div>
-                <div class="content1"></div>
-                <div class="content2"></div>
-            </div>
-            <div class="content">
-                <div class="content1"></div>
-                <div class="content2"></div>
-                <div class="content1"></div>
-            </div>
+            <div class="wrapper">      
+                <div ng-view></div>
+            </div> 
         </div>
+        <!--底部-->
+            <div class="footer">
+                <h2>© 2016 by Ching-Wen Yang.Ching-Wen Yang personal website</h2>
+                <div class="all-links">
+                    <div class="link">
+                        <a href="https://www.facebook.com/appynofriends/" target="_blank">
+                            <img src="../image/fb-links.png" style="width:40px;">
+                        </a>     
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/chingwenqqq" target="_blank">
+                             <img src="../image/github-links.png" style="width:40px;">
+                        </a>     
+                    </div>
+                    <div class="link">
+                        <a href="https://issuu.com/ching-wenyang" target="_blank">
+                             <img src="../image/issuu-links.png" style="width:40px;">
+                        </a> 
+                    </div>
+                </div>
+            </div>
     </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+    <script>
+        angular.module('qber', ['ngRoute'])
+            .controller('pageController', function($scope) {
+                $scope.change = function(path) {
+                    location.hash = path
+                }  
+            })
+            .config(function($routeProvider) {
+                $routeProvider
+                    .when('/design', {
+                        templateUrl: '/templates/design.html'
+                    })
+                    .when('/illustration', {
+                        templateUrl: '/templates/illustration.html'
+                    })
+                    .when('/photo', {
+                        templateUrl: '/templates/photo.html'
+                    })
+                    .when('/about', {
+                        templateUrl: '/templates/about.html'
+                    })
+                    .when('/contact', {
+                        templateUrl: '/templates/contact.html'
+                    })
+            })
+    </script>
+
 </body>
