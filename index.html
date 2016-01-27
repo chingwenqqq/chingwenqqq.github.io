@@ -6,8 +6,16 @@
     <title>Qber</title>
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
-<body>
-    <div class="full" ng-controller="pageController">
+<body ng-controller="pageController">
+    <div id="popup-outer" onmouseover="document.body.style.overflow='hidden';"
+        onmouseout="document.body.style.overflow='auto';">
+
+        <div id="popup-content">
+            <p id="xyxyxyxy"></p>
+            <div id="popup-close-button" ng-click="closePopup()">x</div>
+        </div>   
+    </div> 
+    <div class="full">
         <div class="site_structure">
         
             <!--logo加選單-->
@@ -76,14 +84,23 @@
             </div>
     </div>
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
     <script>
         angular.module('qber', ['ngRoute'])
             .controller('pageController', function($scope) {
                 $scope.change = function(path) {
                     location.hash = path
-                }  
+                }
+                $scope.showPopup = function(src) {
+                    document.getElementById('popup-outer').style.display = 'block'
+                    document.getElementById('xyxyxyxy').innerHTML = src
+                    console.log('fuck' + src)
+                }
+                $scope.closePopup = function() {
+                    document.getElementById('popup-outer').style.display = 'none'
+                    console.log('close')
+                }
             })
             .config(function($routeProvider) {
                 $routeProvider
@@ -101,6 +118,9 @@
                     })
                     .when('/contact', {
                         templateUrl: '/templates/contact.html'
+                    })
+                    .otherwise({
+                        redirectTo: '/design'
                     })
             })
     </script>

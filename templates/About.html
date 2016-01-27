@@ -1,2 +1,37 @@
 <!--我的自畫像ㄦ-->
-<div class="about-wrapper"></div>
+<style type="text/css">
+    .about-wrapper {
+        width: 600px;
+        margin: 0 auto;
+        background-color: blue;
+        margin-top: 20px;
+        animation-name: fade-in;
+        animation-duration: 1s;
+    }
+    .self-portrait {
+        width: 450px;
+        height: 450px;
+        background-color: yellow;
+        margin: 0 auto;
+    }
+    .about-me {
+        margin-top: 30px;
+        width: 450px;
+        height: 1000px;
+        background-color: yellow;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    @keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</style>
+<div class="about-wrapper">
+    <div class="self-portrait"></div>
+    <div class="about-me"></div>
+</div>

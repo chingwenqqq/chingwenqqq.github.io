@@ -1,0 +1,98 @@
+<style>
+.form-wrapper {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+.image{
+    width: 450px;
+    height: 300px;
+    background-color:yellow;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.form {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 30px 30px 70px 30px;
+    background-color: #e5f5f5;
+    border-radius: 10px;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #32b0b5;
+    color: white;
+    border-radius: 5px;
+}
+textarea:focus{
+    background-color: #e5f5f5;
+    color: black;
+    border: 2px solid #32b0b5;
+    outline: none;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #32b0b5;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+input[type=text]:focus {
+    background-color: #e5f5f5;
+    color: black;
+    border: 2px solid #32b0b5;
+    outline: none;
+}
+input[type=submit]{
+    background-color: #32b0b5;
+    width: 20%;
+    height: 30px;
+    float: right;
+    color: white;
+    border-radius: 5px;
+    border-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    margin-top: 10px;
+}
+input[type=submit]:hover{
+    background-color: #e5f5f5;
+    color: #32b0b5;
+    border: 2px solid #32b0b5;
+    font-size: 13px;
+}
+
+label {
+    color: #32b0b5;
+}
+</style>
+<div class="form-wrapper">
+    <div class="image"></div>
+    <div class="form">
+        <form>
+            <label for="fname">Your Name</label>
+            <br>
+            <input type="text" id="fname" name="fname" value="ChingWen">
+            <br>
+            <label for="mail">Your Email</label>
+            <br>
+            <input type="text" id="mail" name="mail" value="sunny10210604@gmail.com">
+            <label for="Message">Message</label>
+            <textarea></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
