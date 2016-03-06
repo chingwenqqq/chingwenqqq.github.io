@@ -7,12 +7,17 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body ng-controller="pageController">
-    <div id="popup-outer" onmouseover="document.body.style.overflow='hidden';"
-        onmouseout="document.body.style.overflow='auto';">
-
+    <div id="popup-outer" onmouseover="document.body.style.overflow='hidden';"onmouseout="document.body.style.overflow='auto';" ng-click="closePopup()">
+        <div id="popup-close-button" ng-click="closePopup()">
+            x
+        </div>
         <div id="popup-content">
-            <p id="xyxyxyxy"></p>
-            <div id="popup-close-button" ng-click="closePopup()">x</div>
+            <div class="works-image">
+                <img id="works-image"></img>
+            </div>
+            <div class="works-text">
+                <h4 id="works-title"></h4>
+            </div>
         </div>   
     </div> 
     <div class="full">
@@ -93,10 +98,21 @@
                     location.hash = path
                 }
                 $scope.showPopup = function(src) {
+                    var topicDictionary = {
+                        "xxx": "qwe",
+                        "design-oops-mockup.gif": "OOPS試刊號<br>用音樂化解隔閡，不受拘束的搖滾精神。希望在有限的頁面中將每一個團員的特色放到最大，去除飽和度，疊上一種專屬於自己的色彩，創造出個性，以潑墨的效果做為點綴。 排版上希望顏色和文字的方塊的堆砌可以有所突破而不顯凌亂的自我風格。",
+                        "illus-sketch-ya.gif": "永遠不笑<br>被畫者選擇物件：椅子＋黑洞。<br>鷹勾鼻、眼睛一邊單一邊雙、鼻子上有胎記．．．這些都無法影響那自以為是的帥氣，上厚下薄的嘴巴讓表情隨時都很憂鬱。覺得開心也不笑，難過也哭不出來，錯視三角形在腦袋裡迴圈，找不到終點也沒有起點。",
+                        "illus-sketch-chi.gif": "這負心的宇宙<br>被畫者選擇物件：章魚+蝸牛。<br>當一個人，連文青的名詞冠在他身上都顯得膚淺，那隨之而來的，應該就是無限的心傷和對整個宇宙的怨懟吧！",
+                         "illus-sketch-bp6bp6.gif": "大叔系少女<br>被畫者選擇物件：納豆＋洋裝<br>長得有點日式，也受到日本文化的浸染；最喜歡AKB48，會像變態大叔一樣呵呵地笑；最近好像在伊藤潤二中毒。無論本人甚麼奇怪的話題都能接；為最推崇的高反差少女",
+                          "illus-sketch-cadise.gif": "她和UNA<br>被畫者選擇物件：自選物件:骷髏頭(是una吧)+蛋(作者自認為是荷包蛋)<br>Una是她寶貝的名字，我們帶Una去上夏季學院，跟她一起聽音樂，未來打算一起去上攝影課、看展，把她教育成有內涵的好孩子。最近努力的自己做飯，省錢又健康。明明容易覺得惆悵，還是要看虐心漫畫。",
+
+
+                    }
                     document.getElementById('popup-outer').style.display = 'block'
-                    document.getElementById('xyxyxyxy').innerHTML = src
-                    console.log('fuck' + src)
+                    document.getElementById('works-image').src = '../image/' + src
+                    document.getElementById('works-title').innerHTML = topicDictionary[src]
                 }
+       
                 $scope.closePopup = function() {
                     document.getElementById('popup-outer').style.display = 'none'
                     console.log('close')
