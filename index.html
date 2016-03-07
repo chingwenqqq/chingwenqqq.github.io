@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body ng-controller="pageController">
-    <div id="popup-outer" onmouseover="document.body.style.overflow='hidden';"onmouseout="document.body.style.overflow='auto';" ng-click="closePopup()">
+    <div id="popup-outer" onmouseover="document.body.style.overflow='hidden';"onmouseout="document.body.style.overflow='auto';" >
         <div id="popup-close-button" ng-click="closePopup()">
             x
         </div>
@@ -99,18 +99,44 @@
                 }
                 $scope.showPopup = function(src) {
                     var topicDictionary = {
+                        
                         "xxx": "qwe",
-                        "design-oops-mockup.gif": "<strong><a href='https://issuu.com/ching-wenyang/docs/0223232323_5eb194afd397f0'>OOPS</a></strong><br>用音樂化解隔閡，不受拘束的搖滾精神。希望在有限的頁面中將每一個團員的特色放到最大，去除飽和度，疊上一種專屬於自己的色彩，創造出個性，以潑墨的效果做為點綴。 排版上希望顏色和文字的方塊的堆砌可以有所突破而不顯凌亂的自我風格。",
+                        
                         "illus-sketch-ya.gif": "░░永遠不笑░░<br>░複合媒材░<br>被畫者選擇物件：椅子＋黑洞。<br>鷹勾鼻、眼睛一邊單一邊雙、鼻子上有胎記．．．這些都無法影響那自以為是的帥氣，上厚下薄的嘴巴讓表情隨時都很憂鬱。覺得開心也不笑，難過也哭不出來，錯視三角形在腦袋裡迴圈，找不到終點也沒有起點。",
+
                         "illus-sketch-chi.gif": "░░這負心的宇宙░░<br>░複合媒材░<br>被畫者選擇物件：章魚+蝸牛。<br>當一個人，連文青的名詞冠在他身上都顯得膚淺，那隨之而來的，應該就是無限的心傷和對整個宇宙的怨懟吧！",
+
                          "illus-sketch-bp6bp6.gif": "░░大叔系少女░░<br>░複合媒材░<br>被畫者選擇物件：納豆＋洋裝<br>長得有點日式，也受到日本文化的浸染；最喜歡AKB48，會像變態大叔一樣呵呵地笑；最近好像在伊藤潤二中毒。無論本人甚麼奇怪的話題都能接；為最推崇的高反差少女",
+
                           "illus-sketch-cadise.gif": "░░她和UNA░░<br>░複合媒材░<br>被畫者選擇物件：自選物件:骷髏頭(是una吧)+蛋(作者自認為是荷包蛋)<br>Una是她寶貝的名字，我們帶Una去上夏季學院，跟她一起聽音樂，未來打算一起去上攝影課、看展，把她教育成有內涵的好孩子。最近努力的自己做飯，省錢又健康。明明容易覺得惆悵，還是要看虐心漫畫。",
+
                           "illus-aboutme.gif": "░░少女與他的多重人格小夥伴░░<br>░電繪░",
+
                           "illus-appy.gif": "░░沒有朋友的阿皮░░<br>░電繪░",
+
                           "illus-north.gif": "░░你好，我是北極，可以拉我一把嗎？░░<br>░電繪░",
+
                           "illus-robot-zombie.gif": "░░我聽得見你░░<br>░複合媒材░<br>到了夜晚，就是小殭屍睡覺的時候，他維持著人類時的習慣，並相信著土攘可以讓靈魂安息，但不用睡覺的機器人就感到寂寞了...<br>我聽得見你<br>覬覦著可以做夢的靈魂，這是他倆夜晚時的聯繫",
+
                           "illus-robot-zombie2.gif": "░░被狩獵者░░<br>░複合媒材░<br>人類摧毀了自己安寧，並追殺著曾為同類的殭屍，以及自己製造的機器人",
 
+                          "design-sheishei.gif": "<br>░鞋協網站LOGO設計░<br>",
+
+                          "design-zombie-of-ntua.gif": "<br>░國立台灣藝術大學殭屍淪陷區ICON設計░<br>當自己的學校被殭屍病毒攻陷，我們需要只有人類看得懂的ICON來加強紀律與團隊合作，整體設計由明清色系組成，讓你在亂世中，依舊有開朗的每一天！",
+
+                          "design-magazine-of-travel.gif": "░台南小旅行-旅遊雜誌編排░<br>來去台南說走就走！<br>是一個小小的台南兩天一夜遊。旅遊的行程飽含著文化、新舊時代的融合。在設計方面，我以圓形、線條作為點綴，而色彩則是用網版印刷混色而成，希望可以帶來耳目一新的感受！而每一面都有自己專屬的色系，融合台南當地的特色，傳統的主題，卻以跳痛、明亮的顏色構圖，成為新的風貌。底圖用紙撕破的質感，也同樣想要表現質樸的事物卻有著叛逆的表現。<br><br><a href='https://issuu.com/ching-wenyang/docs/_____________________.compressed'>→到ISSUU看完整版</a></strong><br>",
+
+                          "design-oops-mockup.gif": "░OOPS-樂團雜誌創刊號░<br>用音樂化解隔閡，不受拘束的搖滾精神。希望在有限的頁面中將每一個團員的特色放到最大，去除飽和度，疊上一種專屬於自己的色彩，創造出個性，以潑墨的效果做為點綴。 排版上希望顏色和文字的方塊的堆砌可以有所突破而不顯凌亂的自我風格。<br><br><a href='https://issuu.com/ching-wenyang/docs/0223232323_5eb194afd397f0'>→到ISSUU看完整版</a>",
+
+                          "design-oops-mockup.gif": "░OOPS-樂團雜誌創刊號░<br>用音樂化解隔閡，不受拘束的搖滾精神。希望在有限的頁面中將每一個團員的特色放到最大，去除飽和度，疊上一種專屬於自己的色彩，創造出個性，以潑墨的效果做為點綴。 排版上希望顏色和文字的方塊的堆砌可以有所突破而不顯凌亂的自我風格。<br><br><a href='https://issuu.com/ching-wenyang/docs/0223232323_5eb194afd397f0'>→到ISSUU看完整版</a></strong><br>",
+
+                          "design-glass1314.gif": "░璃窩1314酷卡設計░<br>璃窩是手工玻璃的創作團隊，大家來自不同的學校（我也是其中一員喔），用回收玻璃製作容器與生活小物。酷卡的設計是參考我們的作品之質感創作出來的，讓冰冰的玻璃清涼你燥熱的心，保證你沒有梨渦也可以笑出璃窩！<br><br><a href='https://www.facebook.com/%E7%92%83%E7%AA%A91314-1416766315300978/'>→到我們的粉專來看看吧！</a>",
+
+                          "design-life-sketchy.gif": "░Life Sketchy 展覽邀請卡░<br>Life Sketchy是一個由四名學生畫家發起的活動：藉由描繪我們周遭的朋友，重新欣賞、感受我們所關心的人，也重新體驗有他們的生活。同時也希望讓大家也看到我們的畫，看到我們。<br><br><a href='https://www.facebook.com/lifesketchy/'>→到我們的粉專來看看吧！</a>",
+
+                          "design-font.gif": "░字形設計-登鸛雀樓░<br>∴閃亮亮體∵",
+
+                          "design-fathersday-card.gif": "░匠藏工坊-父親節卡片設計░<br>實習期間，公司舉辦父親節活動時，所製作的卡片",
 
                     }
                     document.getElementById('popup-outer').style.display = 'block'
