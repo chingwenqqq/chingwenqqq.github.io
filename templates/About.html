@@ -8,6 +8,43 @@
         animation-name: fade-in;
         animation-duration: 1s;
     }
+    .about-nav {
+        position: fixed;
+        background-color: ;
+        height: 120px;
+        width: 120px;
+        z-index: 10;
+        right: 21%;
+    }
+    .triangle {
+        width: 0px;
+        height: 0px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent #4ca4a7 transparent transparent;
+        position: absolute;
+        margin-top: 3.5px;
+        margin-left: -5px;
+    }
+    .about-bottons {
+        width: 90%;
+        margin-left: 10%;
+        height: 36px;
+        margin-bottom: 4px;
+        background-color: #4ca4a7;
+        border-radius: 4px;
+        color: white;
+        padding-left: 10px;
+        padding-top: 7px;
+        cursor: pointer;
+    }
+    .about-botton:hover > .about-bottons {
+        background-color: #198a8e;
+    }
+    .about-botton:hover > .triangle {
+        border-color: transparent #198a8e transparent transparent;
+    }
+
     .self-portrait {
         margin: 0 auto;
         width: 480px;
@@ -43,11 +80,37 @@
     .about-me-brief {
         line-height: 30px;
         padding-bottom: 10px;
-        border-bottom: 1px dashed;
     }
     .text {
+        margin-bottom: 40px;
+    }
+    .text > h3 {
+        font-size: 16px;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
         margin-bottom: 20px;
     }
+    th , td {
+        text-align: left;
+    }
+    th {
+        font-size: 16px;
+        background-color: ;
+        border-bottom: 1px solid #b2d8d9;
+        padding: 12px;
+    }
+    td {
+        font-size: 14px;
+        padding: 9px;
+    }
+    tr:nth-child(even) {
+        background-color: #e5f2f2;
+    }
+
     @keyframes fade-in {
     from {
         opacity: 0;
@@ -58,6 +121,22 @@
 }
 </style>
 <div class="about-wrapper">
+
+    <div class="about-nav">
+        <div class="about-botton">
+            <div class="triangle"></div>
+            <div class="about-bottons">關於我</div>
+        </div>
+        <div class="about-botton">
+            <div class="triangle"></div>
+            <div class="about-bottons">技能</div>
+        </div>
+        <div class="about-botton">
+            <div class="triangle"></div>
+            <div class="about-bottons">經歷</div>
+        </div>
+
+    </div>
     <div class="self-portrait">
         <div class="my-self-portrait">
             <img src="./image/self-potrait.png">
@@ -65,15 +144,63 @@
     </div>
     <div class="about-me">
         <div class="about-me-brief text">
-            <strong>姓名：楊晴雯<br>
+            姓名：楊晴雯<br>
             學校台灣藝術大學 視覺傳達與設計學系 日間部三年級<br>
-            現居地：新北 板橋</strong>
+            現居地：新北 板橋
         </div>
         <div class="self-introduction text">
-            <strong>關於我</strong><br>
+            <h3>關於我</h3>
+            <br>
             <p>我是楊晴雯，來自台東鹿野，有時活潑，有時放空而在自己的小宇宙，喜歡稀奇古怪的玩意兒。學習到新的創作方式就會非常開心，希望自己的創作或設計不止於平面，而是能有更多媒材之間的奇妙結合。我在這個學期申請了工藝系輔系，渴求學習到更多東西，我也希望有機會可以在這個暑假成為木工職人設計部門的實習生，運用我的所學－傳達設計，也可以學習到新的事物－木作工藝。</p>
         </div>
-        <div class="my-experience text">經歷</div>
-        <div class="my-skill text">專長</div>
+        <div class="my-skill text">
+            <h3>專長</h3>
+            <br>
+            <table>
+                <tr>
+                    <th>平面設計編排</th>
+                    <th>程度</th>
+                </tr>
+                <tr>
+                    <td>Photoshop</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Illustration</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Indesign</td>
+                    <td></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>3D建模</th>
+                    <th>程度</th>
+                </tr>
+                <tr>
+                    <td>3D MAX</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mud Box</td>
+                    <td></td>
+                </tr>    
+            </table>
+            <table>
+                <tr>
+                    <th>剪輯動畫</th>
+                    <th>程度</th>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="my-experience text">
+            <h3>經歷</h3>
+        </div>
+        
     </div>
 </div>
