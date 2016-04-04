@@ -1,0 +1,132 @@
+
+<style type="text/css">
+    
+.wrapper {
+    height: 800px;
+    background-color: white;
+}
+.photo-content {
+    background-color: white;
+    width: 300px;
+    height: 900px;
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 12px; 
+    float: left;
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+.shadow {
+    position: absolute;
+    background-color: rgba(100 , 100, 100, 0.4);
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    display: none;
+}
+.shadow2 {
+    position: absolute;
+    background-color: rgba(100 , 100, 100, 0.4);
+    width: 300px;
+    height: 450px;
+    z-index: 10;
+    display: none;
+}
+.text {
+    color: white;
+    font-size: 15px;
+    margin-right: 30px;
+    margin-top: 15px;
+    text-align: right;
+    display: none;
+}
+.content1:hover .shadow {
+    display:block;
+}
+.content1:hover .text {
+    display:block;
+}
+.content2:hover .text {
+    display:block;
+}
+.content2:hover .shadow2 {
+    display: block;
+}
+.move:hover .shadow2{
+    display: block;
+}
+.move:hover .shadow{
+    display: block;
+}
+.move:hover .text{
+    display: block;
+}
+
+
+</style>
+    <div class="photo-content">
+        <div class="move move-left">
+            <div class="shadow2" ng-click="showPopup('photo-weijen.gif')">
+                <div class="text">四度空間</div>
+            </div>
+            <img src="../image/photo-weijen-icon.gif">
+        </div><!--移動的元素，往左-->
+        <div class="move move-bottom">
+            <div class="shadow" ng-click="showPopup('photo-dog.gif')">
+                <div class="text">我有一個秘密跟你說</div>
+            </div>
+            <img src="../image/photo-dog-icon.gif">
+        </div><!--移動的元素，往下-->
+        <div class="move move-right">
+            <div class="shadow2" ng-click="showPopup('photo-tree.gif')">
+                <div class="text"></div>
+            </div>
+             <img src="../image/photo-tree-icon.gif">
+        </div><!--移動的元素，往右-->
+        <div class="content1">
+            <div class="shadow" ng-click="showPopup('photo-farm.gif')">
+                <div class="text">下一季</div>
+            </div>
+            <img src="../image/photo-farm-icon.gif">
+        </div>
+        <div class="content2">
+            <div class="shadow2">
+                <div class="text">作品介紹</div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="photo-content">
+        <div class="content2">
+            <div class="shadow2" ng-click="showPopup('design-magazine-of-travel.gif')">
+                <div class="text">台南小旅行</div>
+            </div>
+            <img src="../image/design-magazine-of-travel-icon.gif">
+        </div>
+        <div class="content1">
+            <div class="shadow">
+                <div class="text">作品名稱</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="photo-content">
+        <div class="content1">
+            <div class="shadow" ng-click="showPopup('design-fathersday-card.gif')">
+                <div class="text">匠藏工坊 父親節卡片計畫</div>
+            </div>
+            <img src="../image/design-fathersday-card-icon.gif">
+        </div>
+        <div class="content2">
+            <div class="shadow2" >
+                <div class="text"></div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    var design01 {
+        images = "sayhi"
+        title = "標題1"
+        introduce = "內容介紹"
+    }
+</script>
