@@ -21,7 +21,7 @@
         height: 0px;
         border-width: 10px;
         border-style: solid;
-        border-color: transparent #4ca4a7 transparent transparent;
+        border-color: transparent #ccffee transparent transparent;
         position: absolute;
         margin-top: 3.5px;
         margin-left: -5px;
@@ -31,18 +31,19 @@
         margin-left: 10%;
         height: 36px;
         margin-bottom: 4px;
-        background-color: #4ca4a7;
+        background-color: #ccffee;
         border-radius: 4px;
-        color: white;
+        color: #009da3;
         padding-left: 10px;
         padding-top: 7px;
         cursor: pointer;
     }
     .about-botton:hover > .about-bottons {
-        background-color: #198a8e;
+        background-color: #009da3;
+        color: white;
     }
     .about-botton:hover > .triangle {
-        border-color: transparent #198a8e transparent transparent;
+        border-color: transparent #009da3 transparent transparent;
     }
 
     .self-portrait {
@@ -105,12 +106,34 @@
     }
     td {
         font-size: 14px;
-        padding: 9px;
+        padding: 12px;
     }
     tr:nth-child(even) {
         background-color: #e5f2f2;
     }
-
+    .myProgress {
+        margin-top: -2px;
+        position: relative;
+        width: 250px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: #00b6bd;
+    }
+    .myBar {
+        margin-top: 2px;
+        margin-left: 2px;
+        position: absolute;
+        height: 16px;
+        border-radius: 8px;
+        background-color: #ccffee;
+        
+    }
+    .label {
+        font-size: 10px;
+        margin-top: 3px;
+        margin-left: 7px;
+        color: ;
+    }
     @keyframes fade-in {
     from {
         opacity: 0;
@@ -157,44 +180,116 @@
             <h3>專長</h3>
             <br>
             <table>
+                <colgroup>
+                    <col style="width: 30%;">
+                    <col style="width: 70%;">
+                </colgroup>
+
                 <tr>
                     <th>平面設計編排</th>
-                    <th>程度</th>
+                    <th></th>
                 </tr>
                 <tr>
                     <td>Photoshop</td>
-                    <td></td>
+                    <td>
+                        <div class="myProgress">
+                            <div class="myBar PS">
+                                <div class="label">80%</div>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td>Illustration</td>
-                    <td></td>
+                    <td>
+                        <div class="myProgress" id="AI">
+                            <div class="myBar">
+                                <div class="label">10%</div>
+                            </div>
+                        </div>
+                    </td>               
                 </tr>
                 <tr>
                     <td>Indesign</td>
-                    <td></td>
-                </tr>
+                    <td>
+                        <div class="myProgress">
+                            <div class="myBar" id="ID">
+                                <div class="label">10%</div>
+                            </div>
+                        </div>
+                    </td>                
+                    </tr>
             </table>
+
             <table>
+                <colgroup>
+                    <col style="width: 30%;">
+                    <col style="width: 70%;">
+                </colgroup>
                 <tr>
                     <th>3D建模</th>
-                    <th>程度</th>
+                    <th></th>
                 </tr>
                 <tr>
                     <td>3D MAX</td>
-                    <td></td>
+                    <td>
+                        <div class="myProgress">
+                            <div class="myBar" id="3D-MAX">
+                                <div class="label">10%</div>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td>Mud Box</td>
-                    <td></td>
+                    <td>
+                        <div class="myProgress">
+                            <div class="myBar" id="MD">
+                                <div class="label">10%</div>
+                            </div>
+                        </div>
+                    </td>
                 </tr>    
             </table>
+
             <table>
+                <colgroup>
+                    <col style="width: 30%;">
+                    <col style="width: 70%;">
+                </colgroup>
                 <tr>
-                    <th>剪輯動畫</th>
-                    <th>程度</th>
+                    <th>網頁製作</th>
+                    <th></th>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td>CSS</td>
+                    <td>
+                        <div class="myProgress" id="CSS">
+                            <div class="myBar">
+                                <div class="label">10%</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>
+                    <div class="myProgress">
+                        <div class="myBar" id="HTML">
+                            <div class="label">10%</div>
+                        </div>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JAVASCRIPT</td>
+                    <td>
+                        <div class="myProgress">
+                            <div class="myBar" id="JS">
+                                <div class="label">10%</div>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -204,3 +299,7 @@
         
     </div>
 </div>
+
+<script>
+    document.getElementsByClassName('PS')style.width ='80%';
+</script>
