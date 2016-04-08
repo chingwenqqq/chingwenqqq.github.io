@@ -65,7 +65,7 @@
     .about-me {
         margin-top: 30px;
         width: 450px;
-        height: 1000px;
+        height: 1800px;
         background-color: ;
         margin: 0 auto;
         margin-top: 40px;
@@ -88,7 +88,14 @@
     .text > h3 {
         font-size: 16px;
     }
-    table {
+    .circle {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        position: relative;
+    }
+     table {
         border-collapse: collapse;
         width: 100%;
         margin: 0 auto;
@@ -99,7 +106,7 @@
         text-align: left;
     }
     th {
-        font-size: 16px;
+        font-size: 14px;
         background-color: ;
         border-bottom: 1px solid #b2d8d9;
         padding: 12px;
@@ -130,10 +137,109 @@
     }
     .label {
         font-size: 10px;
-        margin-top: 3px;
-        margin-left: 7px;
-        color: ;
+        margin-top: 2px;
+        margin-left: 15px;
+        color: #00b6bd;
     }
+    .MAX {
+        width: 20%;
+    }
+    .MD{
+        width: 40%;
+    }
+    .PS {
+        width: 80%;
+    }
+    .AI {
+        width: 80%;
+    }
+    .ID {
+        width: 60%;
+    }
+    .CSS {
+        width: 40%;
+    }
+    .HTML {
+        width: 40%;
+    }
+    .JS {
+        width: 20%;
+    }
+    .my-experience {
+        width: 100%;
+        height: 800px;
+        background-color: blue;
+    }
+    .time {
+        width: 20%;
+        height: 90%;
+        background-color: pink;
+        float: left;
+        padding-top: 13px;
+        padding-left: 5px;
+    }
+    .time-text {
+        width: 90%;
+        height: 15px;
+        background-color: white;
+        margin-bottom: 60px;
+        font-size: 15px;
+    }
+    .time-progress {
+        width: 5%;
+        margin-left: ;
+        float: left;
+        height: 95%;
+        background-color: yellow;
+    }
+    .time-bar {
+        width: 40%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 30px;
+        padding-top: 15px;
+    }
+    .dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 8px;
+        background-color: white;
+        margin-left: -3px;
+        margin-bottom: 60px;
+    }
+    .event {
+        width: 70%;
+        height: 90%;
+        float: left;
+        background-color: white;
+    }
+    .event-content {
+        padding-top: 10px;
+        margin-bottom: 5px;
+        width: 100%;
+        height: 60px;
+    }
+    .event-line-short {
+        width: 10%;
+        height: 10px;
+        border-bottom: dotted;
+        float: left;
+    }
+    .event-line-long {
+        width: 15%;
+        height: 10px;
+        border-bottom: dotted;
+        float: left;
+    }
+
+    .event-text {
+        float: left;
+        width: 250px;
+        height: 50px;
+        background-color: pink;
+        border-radius: 10px;
+    }
+
     @keyframes fade-in {
     from {
         opacity: 0;
@@ -145,7 +251,7 @@
 </style>
 <div class="about-wrapper">
 
-    <div class="about-nav">
+    <!--<div class="about-nav">
         <div class="about-botton">
             <div class="triangle"></div>
             <div class="about-bottons">關於我</div>
@@ -157,7 +263,7 @@
         <div class="about-botton">
             <div class="triangle"></div>
             <div class="about-bottons">經歷</div>
-        </div>
+        </div>-->
 
     </div>
     <div class="self-portrait">
@@ -173,12 +279,11 @@
         </div>
         <div class="self-introduction text">
             <h3>關於我</h3>
-            <br>
             <p>我是楊晴雯，來自台東鹿野，有時活潑，有時放空而在自己的小宇宙，喜歡稀奇古怪的玩意兒。學習到新的創作方式就會非常開心，希望自己的創作或設計不止於平面，而是能有更多媒材之間的奇妙結合。我在這個學期申請了工藝系輔系，渴求學習到更多東西，我也希望有機會可以在這個暑假成為木工職人設計部門的實習生，運用我的所學－傳達設計，也可以學習到新的事物－木作工藝。</p>
         </div>
         <div class="my-skill text">
-            <h3>專長</h3>
-            <br>
+            <h3>專長技能</h3>
+            <div class="circle"></div>
             <table>
                 <colgroup>
                     <col style="width: 30%;">
@@ -194,7 +299,7 @@
                     <td>
                         <div class="myProgress">
                             <div class="myBar PS">
-                                <div class="label">80%</div>
+                                <div class="label">熟練</div>
                             </div>
                         </div>
                     </td>
@@ -202,9 +307,9 @@
                 <tr>
                     <td>Illustration</td>
                     <td>
-                        <div class="myProgress" id="AI">
-                            <div class="myBar">
-                                <div class="label">10%</div>
+                        <div class="myProgress">
+                            <div class="myBar AI">
+                                <div class="label">熟練</div>
                             </div>
                         </div>
                     </td>               
@@ -213,8 +318,8 @@
                     <td>Indesign</td>
                     <td>
                         <div class="myProgress">
-                            <div class="myBar" id="ID">
-                                <div class="label">10%</div>
+                            <div class="myBar ID">
+                                <div class="label">普通</div>
                             </div>
                         </div>
                     </td>                
@@ -234,8 +339,8 @@
                     <td>3D MAX</td>
                     <td>
                         <div class="myProgress">
-                            <div class="myBar" id="3D-MAX">
-                                <div class="label">10%</div>
+                            <div class="myBar MAX">
+                                <div class="label">QQ</div>
                             </div>
                         </div>
                     </td>
@@ -244,8 +349,8 @@
                     <td>Mud Box</td>
                     <td>
                         <div class="myProgress">
-                            <div class="myBar" id="MD">
-                                <div class="label">10%</div>
+                            <div class="myBar MD">
+                                <div class="label">努力學習中</div>
                             </div>
                         </div>
                     </td>
@@ -264,9 +369,9 @@
                 <tr>
                     <td>CSS</td>
                     <td>
-                        <div class="myProgress" id="CSS">
-                            <div class="myBar">
-                                <div class="label">10%</div>
+                        <div class="myProgress">
+                            <div class="myBar CSS">
+                                <div class="label">努力學習中</div>
                             </div>
                         </div>
                     </td>
@@ -275,8 +380,8 @@
                     <td>HTML</td>
                     <td>
                     <div class="myProgress">
-                        <div class="myBar" id="HTML">
-                            <div class="label">10%</div>
+                        <div class="myBar HTML">
+                            <div class="label">努力學習中</div>
                         </div>
                     </div>
                     </td>
@@ -285,8 +390,8 @@
                     <td>JAVASCRIPT</td>
                     <td>
                         <div class="myProgress">
-                            <div class="myBar" id="JS">
-                                <div class="label">10%</div>
+                            <div class="myBar JS">
+                                <div class="label">QQ</div>
                             </div>
                         </div>
                     </td>
@@ -295,11 +400,81 @@
         </div>
         <div class="my-experience text">
             <h3>經歷</h3>
+            <br>
+        <div class="time">
+            <div class="time-text">2014/6/3-</div>
+            <div class="time-text">2014/6/3-</div>
+            <div class="time-text">2014/6/3-</div>
+            <div class="time-text">2014/6/3-</div>
+            <div class="time-text">2014/6/3-</div>
+            <div class="time-text">2014/6/3-</div>
+            <div class="time-text">2014/6/3-</div>
+            <div class="time-text">2014/6/3-</div>
+            <div class="time-text">2014/6/3-</div>
+            <div class="time-text">2014/6/3-</div>
+        </div>
+        <div class="time-progress">
+            <div class="time-bar">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div class="event">
+            <div class="event-content">
+                <div class="event-line-short"></div>
+                <div class="event-text"></div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-long"></div>
+                <div class="event-text"></div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-short"></div>
+                <div class="event-text"></div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-long"></div>
+                <div class="event-text"></div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-short"></div>
+                <div class="event-text"></div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-long"></div>
+                <div class="event-text"></div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-short"></div>
+                <div class="event-text"></div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-long"></div>
+                <div class="event-text"></div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-short"></div>
+                <div class="event-text"></div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-long"></div>
+                <div class="event-text"></div>
+            </div>
+
+        </div>
         </div>
         
     </div>
 </div>
 
 <script>
-    document.getElementsByClassName('PS')style.width ='80%';
+    document.getElementsByClassName('my-Bar-nav')[0].style.width = '100%';
 </script>
