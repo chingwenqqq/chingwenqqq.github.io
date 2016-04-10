@@ -7,11 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body ng-controller="pageController">
-    <div id="popup-outer" onmouseover="document.body.style.overflow='hidden';"onmouseout="document.body.style.overflow='auto';" >
-        <div id="popup-close-button" ng-click="closePopup()">
-            ✖
-        </div>
-        <div id="popup-content">
+    <div id="popup-outer" onmouseover="document.body.style.overflow='hidden';"onmouseout="document.body.style.overflow='auto';" ng-click="closePopup()">
+        <div id="popup-content" ng-click="$event.stopPropagation()">
             <div class="works-image">
                 <img id="works-image"></img>
             </div>
