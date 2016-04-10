@@ -225,7 +225,7 @@ body {
 }
 .move-left {
     height: 450px;
-    background-color: pink;
+    background-color: transparent;
     animation-name: move-left;
 }
 @keyframes move-left {
@@ -241,7 +241,7 @@ body {
 /*往右的移動元素*/
 .move-right {
     height: 450px;
-    background-color: yellow;
+    background-color: transparent;
     animation-name: move-right;
 }
 @keyframes move-right {
@@ -257,7 +257,7 @@ body {
 /*往下的移動元素*/
 .move-bottom {
     height: 300px;
-    background-color: green;
+    background-color: transparent;
     animation-name: move-bottom;
 }
 @keyframes move-bottom {
