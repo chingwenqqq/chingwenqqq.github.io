@@ -52,9 +52,9 @@
         height: 480px;
         background-color: white;
         padding-top: 20px;
-        border-radius: 5px;
+        /*border-radius: 5px;
         border: 5px solid;
-        border-color: #b2e1e3 #66c4c7 #66c4c7 #b2e1e3;
+        border-color: #b2e1e3 #66c4c7 #66c4c7 #b2e1e3;*/
     }
     .my-self-portrait {
         width: 450px;
@@ -65,36 +65,56 @@
     .about-me {
         margin-top: 30px;
         width: 450px;
-        height: 1800px;
+        height: auto;
         background-color: ;
         margin: 0 auto;
         margin-top: 40px;
         padding: 30px 20px 40px 20px;
     }
+    /*.about-me-icon {
+        margin-right: 10px;
+        margin-bottom: 50px;
+        width: 200px;
+        height: 50px;
+        background-image: url('./image/about-me-icon.png');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        padding-left: 60px;
+        padding-top: 10px;
+    }
+    .about-title {
+        display: inline-block;
+        background-color: blue;
+        margin-top: -5px;
+    }*/
     .self-introduction > p {
         line-height: 23px;
         text-indent : 2em;
         font-size: 14px;
-        color: #007d82;
+        color: black;
         text-align: justify;
     }
     .about-me-brief {
         line-height: 30px;
         padding-bottom: 10px;
+        color: #007f84;
+
     }
     .text {
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
     .text > h3 {
         font-size: 16px;
     }
-    .circle {
-        background-color: blue;
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        position: relative;
-    }
+    .skill {
+        background-color: transparent;
+        width: 400px;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+      }
      table {
         border-collapse: collapse;
         width: 100%;
@@ -167,21 +187,21 @@
     }
     .my-experience {
         width: 100%;
-        height: 800px;
-        background-color: blue;
+        height: 600px;
+        background-color: transparent;
     }
     .time {
-        width: 20%;
+        width: 25%;
         height: 90%;
-        background-color: pink;
+        background-color: transparent;
         float: left;
         padding-top: 13px;
-        padding-left: 5px;
+        padding-right: 5px;
     }
     .time-text {
-        width: 90%;
+        width: auto;
         height: 15px;
-        background-color: white;
+        background-color: transparent;
         margin-bottom: 60px;
         font-size: 15px;
     }
@@ -189,29 +209,37 @@
         width: 5%;
         margin-left: ;
         float: left;
-        height: 95%;
-        background-color: yellow;
+        height: 100%;
+        background-color: transparent;
     }
     .time-bar {
         width: 40%;
         height: 100%;
-        background-color: blue;
+        background-color: #00b6bd;
         border-radius: 30px;
         padding-top: 15px;
     }
     .dot {
-        width: 15px;
-        height: 15px;
-        border-radius: 8px;
-        background-color: white;
-        margin-left: -3px;
-        margin-bottom: 60px;
+        width: 10px;
+        height: 10px;
+        border: solid 3px #00b6bd;
+        border-radius: 10px;
+        background-color: #ccffee;
+        margin-left: -3.5px;
+        margin-bottom: 59px;
+    }
+    /*.inside-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #99e1e4;
+        margin: 0 auto;*/
     }
     .event {
-        width: 70%;
+        width: 65%;
         height: 90%;
         float: left;
-        background-color: white;
+        background-color: transparent;
     }
     .event-content {
         padding-top: 10px;
@@ -222,23 +250,32 @@
     .event-line-short {
         width: 10%;
         height: 10px;
-        border-bottom: dotted;
+        border-bottom: dotted 3px #99e1e4;
         float: left;
     }
     .event-line-long {
         width: 15%;
         height: 10px;
-        border-bottom: dotted;
+        border-bottom: dotted 3px #99e1e4;
         float: left;
     }
 
     .event-text {
         float: left;
-        width: 250px;
-        height: 50px;
-        background-color: pink;
+        width: 220px;
+        height: auto;
+        background-color: #99e1e4;
         border-radius: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: justify;
+        color: #00484b;
     }
+
 
     @keyframes fade-in {
     from {
@@ -268,22 +305,25 @@
     </div>
     <div class="self-portrait">
         <div class="my-self-portrait">
-            <img src="./image/self-potrait.png">
+            <img src="./image/self-portrait-2.png">
         </div>
     </div>
     <div class="about-me">
         <div class="about-me-brief text">
+            <img src="./image/about-me-icon.png"><br>
             姓名：楊晴雯<br>
             學校台灣藝術大學 視覺傳達與設計學系 日間部三年級<br>
             現居地：新北 板橋
         </div>
         <div class="self-introduction text">
-            <h3>關於我</h3>
+            <h3>▒░關於我░▒</h3>
             <p>我是楊晴雯，來自台東鹿野，有時活潑，有時放空而在自己的小宇宙，喜歡稀奇古怪的玩意兒。學習到新的創作方式就會非常開心，希望自己的創作或設計不止於平面，而是能有更多媒材之間的奇妙結合。我在這個學期申請了工藝系輔系，渴求學習到更多東西，我也希望有機會可以在這個暑假成為木工職人設計部門的實習生，運用我的所學－傳達設計，也可以學習到新的事物－木作工藝。</p>
         </div>
         <div class="my-skill text">
-            <h3>專長技能</h3>
-            <div class="circle"></div>
+                <h3>▒░專長技能░▒</h3>
+            <div class="skill">
+                <img src="./image/skill.png">
+            </div>
             <table>
                 <colgroup>
                     <col style="width: 30%;">
@@ -399,75 +439,113 @@
             </table>
         </div>
         <div class="my-experience text">
-            <h3>經歷</h3>
+            <h3>▒░經歷░▒</h3>
             <br>
         <div class="time">
-            <div class="time-text">2014/6/3-</div>
-            <div class="time-text">2014/6/3-</div>
-            <div class="time-text">2014/6/3-</div>
-            <div class="time-text">2014/6/3-</div>
-            <div class="time-text">2014/6/3-</div>
-            <div class="time-text">2014/6/3-</div>
-            <div class="time-text">2014/6/3-</div>
-            <div class="time-text">2014/6/3-</div>
-            <div class="time-text">2014/6/3-</div>
-            <div class="time-text">2014/6/3-</div>
+            <div class="time-text">2013年</div>
+            <div class="time-text">2013年9月-</div>
+            <div class="time-text">2014年9~12月</div>
+            <div class="time-text">2015年2~6月</div>
+            <div class="time-text">2015年4月</div>
+            <div class="time-text">2015年7~8月</div>
+            <div class="time-text">2015年9月</div>
+            <div class="time-text">2015年12月</div>
+            <!--<div class="time-text">2014/6/3-</div>
+            <div class="time-text">2014/6/3-</div>-->
         </div>
         <div class="time-progress">
             <div class="time-bar">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+                <div class="dot">
+                    <div class="inside-dot"></div>
+                </div>
+                <div class="dot">
+                    <div class="inside-dot"></div>
+                </div>
+                <div class="dot">
+                    <div class="inside-dot"></div>
+                </div>
+                <div class="dot">
+                    <div class="inside-dot"></div>
+                </div>
+                <div class="dot">
+                    <div class="inside-dot"></div>
+                </div>
+                <div class="dot">
+                    <div class="inside-dot"></div>
+                </div>
+                <div class="dot">
+                    <div class="inside-dot"></div>
+                </div>
+                <div class="dot">
+                    <div class="inside-dot"></div>
+                </div>
+                <!--<div class="dot">
+                    <div class="inside-dot"></div>
+                </div>
+                <div class="dot">
+                    <div class="inside-dot"></div>
+                </div>-->
             </div>
         </div>
         <div class="event">
             <div class="event-content">
                 <div class="event-line-short"></div>
-                <div class="event-text"></div>
+                <div class="event-text">
+                    台東女中美術班畢業，高三擔任畢業美展總召，並製作畢業畫冊。
+                </div>
             </div>
             <div class="event-content">
                 <div class="event-line-long"></div>
-                <div class="event-text"></div>
+                <div class="event-text">
+                    進入國立台灣藝術大學視覺傳達設計學系日間部就讀。
+                </div>
             </div>
             <div class="event-content">
+                <div class="event-line-short"></div>
+                <div class="event-text">
+                    在「城南藝事：漢字藝術展」擔任導覽員。
+                </div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-long"></div>
+                <div class="event-text">
+                    在台大藝術季與同伴成立玻璃工藝品牌「璃窩1314」，成為主要宣傳美編。
+                </div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-short"></div>
+                <div class="event-text">
+                    參與台藝大攝影社展覽-保鮮。
+                </div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-long"></div>
+                <div class="event-text">
+                    「匠藏工坊」暑期實習生。負責宣傳活動的視覺設計，產品繪製，以及活動企劃，也接觸金工製作。
+                </div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-short"></div>
+                <div class="event-text">
+                    獲得「視傳系系展-跨圈圈」<br>
+                    平面設計類-優選
+                </div>
+            </div>
+            <div class="event-content">
+                <div class="event-line-long"></div>
+                <div class="event-text">
+                    中華民國工業設計協會<br>
+                    台北亮點設計-優選
+                </div>
+            </div>
+            <!--<div class="event-content">
                 <div class="event-line-short"></div>
                 <div class="event-text"></div>
             </div>
             <div class="event-content">
                 <div class="event-line-long"></div>
                 <div class="event-text"></div>
-            </div>
-            <div class="event-content">
-                <div class="event-line-short"></div>
-                <div class="event-text"></div>
-            </div>
-            <div class="event-content">
-                <div class="event-line-long"></div>
-                <div class="event-text"></div>
-            </div>
-            <div class="event-content">
-                <div class="event-line-short"></div>
-                <div class="event-text"></div>
-            </div>
-            <div class="event-content">
-                <div class="event-line-long"></div>
-                <div class="event-text"></div>
-            </div>
-            <div class="event-content">
-                <div class="event-line-short"></div>
-                <div class="event-text"></div>
-            </div>
-            <div class="event-content">
-                <div class="event-line-long"></div>
-                <div class="event-text"></div>
-            </div>
+            </div>-->
 
         </div>
         </div>
