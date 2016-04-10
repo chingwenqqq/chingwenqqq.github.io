@@ -1,8 +1,20 @@
 <style type="text/css">
     
 .wrapper {
-    height: 1200px;
+    height: 1600px;
     background-color: white;
+}
+.design-content {
+    background-color: white;
+    width: 300px;
+    height: 1600px;
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 12px; 
+    float: left;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    background-color: transparent;
 }
 .shadow {
     position: absolute;
@@ -52,7 +64,7 @@
 
 
 </style>
-    <div class="content">
+    <div class="design-content">
         <div class="move move-left">
             <div class="shadow2" ng-click="showPopup('design-oops-mockup.gif')">
                 <div class="text">OOPS試刊號</div>
@@ -86,15 +98,21 @@
             <div class="shadow" ng-click="showPopup('design-glass1314.gif')">
                 <div class="text">璃窩1314酷卡設計</div>
             </div>
-            <img src="../image/design-glass1314-icon.gif">
+            <img src="./image/design-glass1314-icon.gif">
+        </div>
+        <div class="content2">
+            <div class="shadow2" ng-click="showPopup('design-season.gif')">
+                <div class="text">萬物曆</div>
+            </div>
+            <img src="./image/design-season-icon.gif">
         </div>
     </div>
-    <div class="content">
+    <div class="design-content">
         <div class="content2">
             <div class="shadow2" ng-click="showPopup('design-magazine-of-travel.gif')">
                 <div class="text">台南小旅行</div>
             </div>
-            <img src="../image/design-magazine-of-travel-icon.gif">
+            <img src="./image/design-magazine-of-travel-icon.gif">
         </div>
         <div class="content1">
             <div class="shadow">
@@ -105,10 +123,10 @@
             <div class="shadow2" ng-click="showPopup('design-vegcity.png')">
                 <div class="text">台北亮點-菜菜市民</div>
             </div>
-            <img src="../image/design-vegcity-icon.gif">
+            <img src="./image/design-vegcity-icon.gif">
         </div>
     </div>
-    <div class="content">
+    <div class="design-content">
         <div class="content1">
             <div class="shadow" ng-click="showPopup('design-fathersday-card.gif')">
                 <div class="text">匠藏工坊 父親節卡片計畫</div>
@@ -125,6 +143,12 @@
                 <div class="text">Life Sketchy 展覽邀請卡設計</div>
             </div>
             <img src="../image/design1.png">           
+        </div>
+        <div class="content2">
+            <div class="shadow2" ng-click="showPopup('design-map.gif')">
+                <div class="text">台北捷運路線圖改造</div>
+            </div>
+            <img src="./image/design-map-icon.gif">
         </div>
     </div>
 <script type="text/javascript">
