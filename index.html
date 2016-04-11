@@ -145,7 +145,7 @@
 
                           "photo-cat.gif": "你看什麼看！",
 
-                          "photo-market.gif": "去黃昏市場拍照，被當成可疑人士。",
+                          "photo-market.gif": "去黃昏市場拍照，被當成可疑人士",
 
                           "design-season.gif": "░萬物曆░<br>看似無差別的每一天，其實節氣悄悄的在遞嬗，想把歲月留在紙上，每次的物換星移，每次的日升日落...萬物曆的創作為複合媒材，使用包括-膠彩、羊毛氈、黏土、紙板版畫、水彩、壓克力、色鉛筆、塑膠袋、壓花、標本...豐富的創作方式希望大家可以感受，而這裡的作品更可以用手去感覺，希望大家體會二十四節氣所蘊含的意義<br><br><a href='http://chingwenqqq.github.io/circle24/#/circle-24' target='_blank'>→到萬物曆的專頁來看看吧！</a>",
 
@@ -160,6 +160,14 @@
        
                 $scope.closePopup = function() {
                     document.getElementById('popup-outer').style.display = 'none'
+                }
+                $scope.sendMail = function() {
+                    var title = document.getElementById('mailTitle').value
+                    var content = document.getElementById("mailContent").value
+                    console.log(title, content)
+                    var link = 'mailto:sunny10210604@gmail.com?subject=' + encodeURIComponent(title) + '&body=' + encodeURIComponent(content)
+                    document.getElementById("submitMail").href = link
+                    console.log(link)
                 }
             })
             .config(function($routeProvider) {

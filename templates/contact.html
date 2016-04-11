@@ -78,6 +78,21 @@ input[type=submit]:hover{
 label {
     color: #32b0b5;
 }
+#submitMail {
+    padding: 10px 10px 10px 10px;
+    background-color: #32b0b5;
+    color: #32b0b5;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    margin: 0 auto;
+}
+#submitMail:hover {
+    background-color: #32c4ca;
+}
 </style>
 <div class="form-wrapper">
     <div class="contact-image">
@@ -85,16 +100,12 @@ label {
     </div>
     <div class="form">
         <form>
-            <label for="fname">Your Name</label>
+            <label>Title</label>
             <br>
-            <input type="text" id="fname" name="fname" value="ChingWen">
-            <br>
-            <label for="mail">Your Email</label>
-            <br>
-            <input type="text" id="mail" name="mail" value="sunny10210604@gmail.com">
-            <label for="Message">Message</label>
-            <textarea></textarea>
-            <input type="submit" value="Submit">
+            <input type="text" id="mailTitle">
+            <label>Message</label>
+            <textarea id="mailContent"></textarea>
+            <a id="submitMail" ng-click="sendMail()" href="">Submit</a>
         </form>
     </div>
 </div>
