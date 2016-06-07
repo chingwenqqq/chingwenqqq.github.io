@@ -274,27 +274,37 @@ body {
 
 .content1 {
     background-color: white;
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     margin-top: 20px;
     cursor:zoom-in;
 }
 .content1 > img {
-    width: 301px;
+    max-width: 301px;
+    width: 100%;
+    height: auto;
 }
 .content2 {
     background-color: white;
-    width: 300px;
-    height: 450px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
     margin-top: 20px; 
     cursor:zoom-in;
+}
+.content2 > img {
+    max-width: 301px;
+    width: 100%;
+    height: auto;
 }
 .footer {
     background-color: white;
     margin: 0 auto;
     height: 100px;
-    width: 400px;
+    max-width: 400px;
+    width: 80%;
     position: relative;
     margin-bottom: 40px;
     margin-top: 150px;
@@ -318,4 +328,10 @@ body {
     margin-left: 5px;
     background-size: 40px;
 }
+@media only screen and (max-width: 450px) {
+    .footer > h2 {
+    font-size: 7px;
+    line-height: 20px;
+    }
 
+}
