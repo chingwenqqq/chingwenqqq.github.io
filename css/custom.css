@@ -3,6 +3,7 @@ body {
 }
 .full {
     width: 100%;
+    background-color: black;
 }
 #popup-outer {
     position: fixed;
@@ -60,7 +61,7 @@ body {
     line-height: 25px;
 }
 .site_structure {
-    background-color: white;
+    background-color: pink;
     max-width: 980px;
     position: static;
     margin: 0 auto;
@@ -74,9 +75,9 @@ body {
     }
 }
 .header {
-    background-color: white;
+    background-color: yellow;
     height: 280px;
-    width: 980px;
+    width: 100%;
 }
 .logotype {
     background-color: white;

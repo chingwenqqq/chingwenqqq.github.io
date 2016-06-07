@@ -1,9 +1,10 @@
 <!--我的自畫像ㄦ-->
 <style type="text/css">
     .wrapper {
-        width: 600px;
+        max-width: 600px;
+        width: 90%;
         margin: 0 auto;
-        background-color: ;
+        background-color: blue;
         margin-top: 20px;
         animation-name: fade-in;
         animation-duration: 1s;
@@ -48,8 +49,9 @@
 
     .self-portrait {
         margin: 0 auto;
-        width: 480px;
-        height: 480px;
+        max-width: 480px;
+        width: 100%;
+        height: auto;
         background-color: white;
         padding-top: 20px;
         /*border-radius: 5px;
@@ -57,16 +59,22 @@
         border-color: #b2e1e3 #66c4c7 #66c4c7 #b2e1e3;*/
     }
     .my-self-portrait {
-        width: 450px;
-        height: 450px;
+        max-width: 450px;
+        width: 90%;
+        height: auto;
         background-color: transparent;
         margin: 0 auto;
     }
+    .my-self-portrait > img {
+        max-width: 100%;
+        height: auto;
+    }
     .about-me {
         margin-top: 30px;
-        width: 450px;
+        max-width: 450px;
+        width: 90%;
         height: auto;
-        background-color: ;
+        background-color: white;
         margin: 0 auto;
         margin-top: 40px;
         padding: 30px 20px 40px 20px;
@@ -107,14 +115,18 @@
         font-size: 16px;
     }
     .skill {
-        background-color: transparent;
-        width: 400px;
+        background-color: yellow;
+        max-width: 400px;
+        width: 95%;
         height: 150px;
         margin: 0 auto;
         margin-top: 40px;
-        padding-left: 30px;
         padding-bottom: 20px;
       }
+    .skill > img {
+        max-width: 100%;
+        height: auto;
+    }
      table {
         border-collapse: collapse;
         width: 100%;
@@ -127,7 +139,7 @@
     }
     th {
         font-size: 14px;
-        background-color: ;
+        background-color: transparent;
         border-bottom: 1px solid #b2d8d9;
         padding: 12px;
     }
@@ -141,7 +153,8 @@
     .myProgress {
         margin-top: -2px;
         position: relative;
-        width: 250px;
+        max-width: 250px;
+        width: 100%;
         height: 20px;
         border-radius: 10px;
         background-color: #00b6bd;
@@ -193,7 +206,7 @@
     .time {
         width: 25%;
         height: 100%;
-        background-color: transparent;
+        background-color: yellow;
         float: left;
         padding-top: 13px;
         padding-right: 5px;
@@ -263,13 +276,13 @@
         height: 60px;
     }
     .event-line-short {
-        width: 10%;
+        width: 5%;
         height: 10px;
         border-bottom: dotted 3px #b2e9eb;
         float: left;
     }
     .event-line-long {
-        width: 15%;
+        width: 8%;
         height: 10px;
         border-bottom: dotted 3px #b2e9eb;
         float: left;
@@ -277,7 +290,8 @@
 
     .event-text {
         float: left;
-        width: 220px;
+        max-width: 220px;
+        width: 50%;
         height: auto;
         background-color: #b2e9eb;
         border-radius: 10px;
@@ -290,7 +304,46 @@
         text-align: justify;
         color: #00484b;
     }
+    @media only screen and (max-width: 450px) {
+    .self-introduction > p {
+        line-height: 20px;
+        text-indent: 25px;
+        font-size: 12px;
+    }
+    th {
+        font-size: 13px;
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+    td {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .label {
+        font-size: 9px;
+        margin-top: 2px;
+        margin-left: 10px;
+        color: #005b5e;
+    }
+    .event-text {
+        font-size: 9px;
+        margin-left: 10px;
+    }
+    .event-line-long {
+        display: none;
+    }
+    .event-line-short {
+        display: none;
+    } 
+    .time-text {
+        width: auto;
+        height: 15px;
+        background-color: transparent;
+        margin-bottom: 60px;
+        font-size: 10px;
+    }
 
+    }
 </style>
 <div class="about-wrapper">
 
@@ -340,7 +393,7 @@
                 </colgroup>
 
                 <tr>
-                    <th>▪ 平面設計編排</th>
+                    <th>▪ 平面設計</th>
                     <th></th>
                 </tr>
                 <tr>
@@ -532,7 +585,7 @@
             <div class="event-content">
                 <div class="event-line-long"></div>
                 <div class="event-text">
-                    「匠藏工坊」暑期實習生。負責宣傳活動的視覺設計，產品繪製，以及活動企劃，也接觸金工製作。
+                    「匠藏工坊」暑期實習生。視覺設計，產品繪製，活動企劃，金工製作。
                 </div>
             </div>
             <div class="event-content">
